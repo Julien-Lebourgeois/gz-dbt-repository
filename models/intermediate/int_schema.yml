@@ -1,0 +1,14 @@
+version: 2
+
+models:
+- name: intermediate/int_campaigns_day
+  tests:
+    - unique:
+        column_name: 
+          date_date
+    - not_null:
+        column_name:
+          date_date
+          ads_cost
+          ads_impression
+          ads_click
