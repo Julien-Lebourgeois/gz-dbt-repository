@@ -1,0 +1,30 @@
+version: 2
+
+models:
+- name: finance/finance_days
+  tests:
+    - unique:
+        column_name: 
+          date_date
+    - not_null:
+        column_name:
+          date_date
+          nb_transactions
+          revenue
+          average_basket
+          margin
+          operational_margin
+- name: finance/finance_campaigns_day
+  tests:
+    - unique:
+        column_name: 
+          date_date
+    - not_null:
+        column_name:
+          date_date
+          ads_margin
+          nb_transactions
+          revenue
+          average_basket
+          margin
+          operational_margin
